@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('./images/bg-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.logo {
+    margin: 1.5rem 
+}
+
+.main-img img {
+    max-width: 100%;
+}
+.content {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content div {
+    max-width: 50%;
+}
+
+.txt-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-btn h1, .txt-btn p, .txt-btn div {
+    padding: 1.5rem 1rem;
+}
+
+.btn {
+    box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.2);    
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 25px;
+    background: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background: hsl(300, 69%, 71%);
+    color: hsl(257, 40%, 49%);
+}
+
+.contacts div {
+    text-align: right;
+    margin: auto 4.5rem;
+}
+
+.contacts ion-icon {
+    margin: auto 0.5rem;
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacts ion-icon:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width: 1441px) {
+
+    body {
+        background-size: cover;
+    }
+
+    .main-img {
+        margin-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 1.5rem auto
+    }
+    
+    .main-img {
+        margin: 0;
+    }
+
+    .content div {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contacts div {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .contacts ion-icon {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        padding: 1.5rem 4rem;
+        border-radius: 40px;
+        
+    }
+
+    .txt-btn div {
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    
+
+    .main-img {
+        padding: 0 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+
+}
